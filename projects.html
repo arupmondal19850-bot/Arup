@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Arup Mondal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Arup Kumar Mondal</h1>
+  <p>Computer Science Student | Web Developer Intern @ YCSAS</p>
+  <button id="darkToggle" class="dark-btn">🌙 Dark Mode</button>
+
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Skills</a>
+  <a href="projects.html">Projects</a>
+  <a href="internship.html">Internship</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section class="container">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Online College Faculty Management System</h3> 
+   Click here   <button onclick="location.href='images/pro.png';">(open me)</button></li>
+    <p>Developed using HTML, CSS, PHP, and MySQL.</p>
+  </div>
+
+  <div class="card">
+    <h3>Portfolio Website</h3><a class="download" href="index.html">click hear</a></li>
+    <p>Responsive personal portfolio website.</p>
+  </div>
+</section>
+<script>
+  const toggle = document.getElementById("darkToggle");
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    toggle.textContent =
+      document.body.classList.contains("dark")
+        ? "☀ Light Mode"
+        : "🌙 Dark Mode";
+  });
+</script>
+<footer>
+  <p>© 2026 Arup Kumar Mondal</p>
+</footer>
+
+</body>
+</html>

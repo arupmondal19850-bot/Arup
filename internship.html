@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Internship | Arup Mondal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Arup Kumar Mondal</h1>
+  <p>Computer Science Student | Web Developer Intern @ YCSAS</p>
+  <button id="darkToggle" class="dark-btn">🌙 Dark Mode</button>
+
+  <p>Internship Experience</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Skills</a>
+  <a href="projects.html">Projects</a>
+  <a href="internship.html">Internship</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section class="container">
+  <h2>Internship at YACSAS</h2>
+
+
+  <div class="card">
+    <h3>Internship Description</h3>
+    <p>
+      During my 4-week internship at YACSAS, I worked on web development tasks
+      that helped me strengthen my practical knowledge of HTML, CSS, JavaScript. I learned how to design responsive web pages and improve
+      user interface layouts.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Key Learnings</h3>
+    <ul>
+      <li>Building responsive websites using HTML & CSS</li>
+      <li>Understanding website structure and navigation</li>
+      <li>Team collaboration and project documentation</li>
+    </ul>
+  </div>
+
+    </p>
+  </div>
+</section>
+<script>
+  const toggle = document.getElementById("darkToggle");
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    toggle.textContent =
+      document.body.classList.contains("dark")
+        ? "☀ Light Mode"
+        : "🌙 Dark Mode";
+  });
+</script>
+<footer>
+  <p>© 2026 Arup Kumar Mondal</p>
+</footer>
+
+</body>
+</html>

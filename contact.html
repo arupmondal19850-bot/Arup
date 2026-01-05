@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Arup Mondal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Arup Kumar Mondal</h1>
+  <p>Computer Science Student | Web Developer Intern @ YCSAS</p>
+  <button id="darkToggle" class="dark-btn">🌙 Dark Mode</button>
+
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Skills</a>
+  <a href="projects.html">Projects</a>
+  <a href="internship.html">Internship</a>
+  <a href="contact.html">Contact</a>
+
+</nav>
+
+<section class="container">
+  <h2>Contact Me</h2>
+  <p>Email: arupmondal19850@gmail.com</p>
+  <p>Phone: 8584874612</p>
+  <p>Guithub:https://github.com/arupmondal19850-bot/Arup.git</p>
+</section>
+
+<footer>
+  <p>© 2026 Arup Kumar Mondal</p>
+</footer>
+<script>
+  const toggle = document.getElementById("darkToggle");
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    toggle.textContent =
+      document.body.classList.contains("dark")
+        ? "☀ Light Mode"
+        : "🌙 Dark Mode";
+  });
+</script>
+</body>
+</html>

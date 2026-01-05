@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arup Mondal | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Arup Mondal</h1>
+  <p>Computer Science Student | Web Developer Intern @ YCSAS</p>
+  <button id="darkToggle" class="dark-btn">🌙 Dark Mode</button>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Skills</a>
+  <a href="projects.html">Projects</a>
+  <a href="internship.html">Internship</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section class="container">
+  <h2>Welcome</h2>
+  <p>
+    Welcome to my personal portfolio website. Here you can know about me,
+    my skills, and my projects.
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Arup Mondal</p>
+</footer>
+<script>
+  const toggle = document.getElementById("darkToggle");
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    toggle.textContent =
+      document.body.classList.contains("dark")
+        ? "☀ Light Mode"
+        : "🌙 Dark Mode";
+  });
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
